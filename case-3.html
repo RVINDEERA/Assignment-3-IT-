@@ -80,6 +80,41 @@
             margin: 0;
         }
 
+        main>section>div{
+            position: relative;
+            height: 250px;
+
+        }
+        section>div>div{
+            width: calc(100%/3);
+            height: 250px;
+            position: absolute;
+
+            background: url("assets/gif/sun.gif");
+            background-position: center;
+
+            border: 1px solid brown;
+            box-sizing: border-box;
+        }
+
+        section>div>div:nth-child(1){
+            background-color: red;
+
+        }
+
+        section>div>div:nth-child(2){
+            background-color: blue;
+            position: absolute;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        section>div>div:nth-child(3){
+            background-color: yellow;
+            position: absolute;
+            right: 0;
+        }
 
 
 
