@@ -3,8 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <title>case-1</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+
+    <style>
+
+        body{
+            overflow: hidden;
+        }
+        .mainSquare{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+
+        }
+        .mainSquare:nth-child(1){
+            background-color: red;
+        }
+        .mainSquare:nth-child(2){
+            background-color: green;
+            right: 0;
+        }
+        .mainSquare:nth-child(3){
+            background-color: orange;
+            bottom: 0;
+        }
+        .mainSquare:nth-child(4){
+            background-color: deeppink;
+            bottom: 0;
+            right: 0;
+        }
+        #Msquare{
+            width: 12vw;
+            aspect-ratio: 1/1;
+
+            background-color: white;
+            position: absolute;
+
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+        }
+        #Msquare>div{
+            width: 8vw;
+            aspect-ratio: 1/1;
+
+            background-color: red;
+            border-radius: 100%;
+            position: absolute;
+
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+        }
+        .mainSquare>div{
+            width: 10vw;
+            aspect-ratio: 1/1;
+
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        .mainSquare>div>div{
+            width: 5vw;
+            aspect-ratio: 1/1;
+
+            background-color: red;
+            position: absolute;
+
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        .cornerCircles{
+            width: 10vw;
+            aspect-ratio: 1/1;
+
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+        }
+        #c1{
+            left: -5vw;
+            top: -5vw;
+        }
+        #c2{
+            right: -5vw;
+            top: -5vw;
+        }
+        #c3{
+            bottom: -5vw;
+            left: -5vw;
+        }
+        #c4{
+            bottom: -5vw;
+            right: -5vw;
+        }
+        #c5{
+            top: -5vw;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+        #c6{
+            bottom: -5vw;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+
+    </style>
 </head>
 <body>
+
+<!--main 4 squares-->
+    <div class="mainSquare">
+        <div>
+            <div></div>
+        </div>
+    </div>
+    <div class="mainSquare">
+        <div>
+            <div></div>
+        </div>
+    </div>
+    <div class="mainSquare">
+        <div>
+            <div></div>
+        </div>
+    </div>
+    <div class="mainSquare">
+        <div>
+            <div></div>
+        </div>
+    </div>
+<!--Mid Square-->
+    <div id="Msquare">
+        <div></div>
+    </div>
+<!--Corner Circles-->
+    <div id="c1" class="cornerCircles"></div>
+    <div id="c2" class="cornerCircles"></div>
+    <div id="c3" class="cornerCircles"></div>
+    <div id="c4" class="cornerCircles"></div>
+    <div id="c5" class="cornerCircles"></div>
+    <div id="c6" class="cornerCircles"></div>
+
 
 </body>
 </html>
