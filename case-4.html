@@ -5,11 +5,17 @@
     <title>case-4</title>
     <link rel="stylesheet" href="assets/normalize.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <style>
+
         section{
             width: 100vw;
             height: 100vh;
             position: relative;
+
 
 
         }
@@ -25,6 +31,7 @@
 
         .card{
             width: 100vw;
+            box-sizing: border-box;
             position: sticky ;
             top: 0;
 
@@ -47,6 +54,22 @@
             background-color: maroon;
         }
 
+        h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            font-size:5em;
+            transform: translate(-50%, -50%);
+
+            font-family: "Work Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight:700;
+            font-style: normal;
+
+        }
+
+
+
 
 
     </style>
@@ -54,24 +77,31 @@
 <body>
 <section>
 <!--top bar-->
+    <h1>Hello</h1>
     <div class="card" id="card1">
         Card 1
     </div>
+
+
+
 </section>
 
 <section>
+    <h1>How</h1>
     <div class="card" id="card2">
         Card 2
     </div>
 </section>
 
 <section>
+    <h1>Are</h1>
     <div class="card" id="card3">
         Card 3
     </div>
 </section>
 
 <section>
+    <h1>You..?</h1>
     <div class="card" id="card4">
         Card 4
     </div>
