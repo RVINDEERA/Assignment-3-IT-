@@ -6,8 +6,24 @@
     <link rel="stylesheet" href="assets/normalize.css">
 
     <style>
-        #card1{
-            background-color: red;
+        section{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+
+
+        }
+        section:nth-child(2){
+            background-color: royalblue;
+        }
+        section:nth-child(3){
+            background-color: gray;
+        }
+        section:nth-child(4){
+            background-color:rgba(255,0,18,0.87);
+        }
+
+        .card{
             width: 100vw;
             position: sticky ;
             top: 0;
@@ -15,16 +31,53 @@
             color: white;
             font-size: 20px;
             padding: 10px 10px;
+
         }
+        #card1{
+            background-color: red;
+
+        }
+        #card2 {
+            background-color: navy;
+        }
+        #card3 {
+            background-color: black;
+        }
+        #card4 {
+            background-color: maroon;
+        }
+
 
 
     </style>
 </head>
 <body>
+<section>
 <!--top bar-->
-<div id="card1">
-    Card 1
-</div>
+    <div class="card" id="card1">
+        Card 1
+    </div>
+</section>
+
+<section>
+    <div class="card" id="card2">
+        Card 2
+    </div>
+</section>
+
+<section>
+    <div class="card" id="card3">
+        Card 3
+    </div>
+</section>
+
+<section>
+    <div class="card" id="card4">
+        Card 4
+    </div>
+</section>
+
+
 
 
 
